@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umbrauni</title>
+
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: red;
+            padding: 3px;
+        }
+
+        a {
+            margin: 0;
+            text-decoration: none;
+            color: white;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        ul {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-right: 370px;
+        }
+
+        .menu1 {
+            position: relative;
+        }
+
+        .submenu1 {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgb(218, 13, 13);
+            padding: 20px;
+        }
+
+        .menu1:hover .submenu1 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .menu2 {
+            position: relative;
+        }
+
+        .submenu2 {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgb(218, 13, 13);
+            padding: 20px;
+        }
+
+        .menu2:hover .submenu2 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>
+            <a href="#">
+                <span style="color: white;" class="home">Umbrauni</span>
+            </a>
+        </h1>
+
+        <h2>
+            <ul id="menu">
+
+                <li class="crumb">
+                    <a href="#">Coxinhas e Croissants</a>
+                </li>
+
+                <li class="menu1">
+                    <a href="#">Pratos com Brownie</a>
+
+                    <div class="submenu1">
+                        <a href="#">Copo da Felicidade</a>
+                        <a href="#">Escondidinho de Brownie</a>
+                        <a href="#">Quadradinho</a>
+                        <a href="#">Caixinha de Brownie</a>
+                        <a href="#">Box de Brownie</a>
+                        <a href="#">Brownie no pote</a>
+                        <a href="#">Brigabrownie</a>
+                    </div>
+                </li>
+
+                <li class="menu2">
+                    <a href="#">Bolos</a>
+
+                    <div class="submenu2">
+                        <a href="#">Bolos gelados</a>
+                        <a href="#">Slices</a>
+                        <a href="#">Bolo no pote</a>
+                        <a href="#">Fatias de bolo</a>
+                    </div>
+                </li>
+
+            </ul>
+        </h2>
+
+    </header>
+
+</body>
+
+</html>
